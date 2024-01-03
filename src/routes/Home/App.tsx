@@ -2,6 +2,7 @@ import "./App.css";
 import Heading from "../../components/Heading";
 import Navbar from "../../components/Navbar";
 import SearchAndLogo from "../../components/SearchAndLogo";
+import Popup from "../../components/Popup";
 
 function App() {
   return (
@@ -11,9 +12,12 @@ function App() {
           username: "Romain Bernus",
           email: "romain.bernus@gmail.com",
           credits: 10,
+          fname: "Romain",
+          lname: "Bernus",
         }}
         // user={null}
       />
+      <Popup img="first_popup.png" />
       <div className="w-full flex justify-center items-center">
         <Heading
           leftText="watch"
@@ -22,7 +26,7 @@ function App() {
         />
       </div>
       <SearchAndLogo buttonText="Generate" imgLink="homepage_logo.png" />
-      <div className="h-[100rem]"></div>
+      {/* <div className="h-[100rem]"></div> */}
     </main>
   );
 }

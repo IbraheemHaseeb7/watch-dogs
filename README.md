@@ -8,4 +8,5 @@ Tech Stack Used
 - React Router
 - Tailwind CSS
 - Several 3rd Party Dependencies
+- Typescript
 ```
