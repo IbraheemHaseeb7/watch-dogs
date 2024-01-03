@@ -2,12 +2,15 @@ import { TextField } from "@mui/material";
 import withExtraProps from "../../components/SignHOC";
 import React, { useState } from "react";
 import SignButton from "../../components/SignButton";
+import { useNavigate } from "react-router-dom";
 
 function About() {
   const [inputValues, setInputValues] = useState<{
     fname: string;
     lname: string;
   }>({ fname: "", lname: "" });
+
+  const nav = useNavigate();
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     e.preventDefault();
@@ -42,7 +45,7 @@ function About() {
         />
       </div>
       <SignButton
-        onClick={() => {}}
+        onClick={() => nav("/wallet")}
         text="Continute"
         classes="w-full h-[3.5rem] rounded"
       />

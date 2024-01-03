@@ -9,6 +9,8 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import { Toaster } from "react-hot-toast";
 import Verify from "./routes/Verify/Verify.tsx";
 import About from "./routes/About/About.tsx";
+import Wallet from "./routes/Wallet/Wallet.tsx";
+import SignIn from "./routes/SignIn/SignIn.tsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/wallet",
+    element: <Wallet />,
+  },
+  {
+    path: "/sign-in",
+    element: <SignIn />,
   },
 ]);
 

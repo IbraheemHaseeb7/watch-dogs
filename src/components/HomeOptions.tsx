@@ -3,14 +3,14 @@ import { User } from "../types/User";
 
 export default function HomeOptions({ user }: { user: User | null }) {
   const options: { title: string; link: string; secondText?: string }[] = [
-    { title: "My Portfolio", link: "" },
-    { title: "What is WatchDogs?", link: "" },
+    { title: "My Portfolio", link: "/dashboard" },
+    { title: "What is WatchDogs?", link: "/" },
     {
       title: "Sign Up",
-      link: "sign-up",
+      link: "/sign-up",
       secondText: "Get 10 extra such credits",
     },
-    { title: "Sign in", link: "sign-in" },
+    { title: "Sign in", link: "/sign-in" },
   ];
 
   return (
@@ -44,17 +44,18 @@ export default function HomeOptions({ user }: { user: User | null }) {
       <div className="h-[calc(100%-5rem)] flex flex-col justify-center items">
         {options.map(({ title, link, secondText }) => {
           return (
-            <button
-              key={title}
+            <Link
+              to={link}
+              style={{ color: "#000", textDecoration: "none" }}
               className="p-2 flex justify-start text-left text-[14px] w-full items-center gap-1 h-[20%] hover:bg-[#cccccc]"
             >
-              <Link to={link}>
+              <button key={title} className="" style={{ color: "#000" }}>
                 {title}
                 {secondText && (
                   <span className="text-[10px]">{`(${secondText})`}</span>
                 )}
-              </Link>
-            </button>
+              </button>
+            </Link>
           );
         })}
         <div className="border-t-[1px] text-[10px] flex justify-start items-center gap-2 h-full">
