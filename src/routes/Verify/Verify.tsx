@@ -23,7 +23,7 @@ export default function Verify() {
         <SignButton
           onClick={() => nav("/about")}
           text="Verify email address"
-          classes="mt-[2rem] w-2/3 h-[3.5rem] rounded"
+          classes="mt-[2rem] w-2/3 h-[3.5rem] rounded bg-button-gradient"
         />
         <p className="text-[#949292] text-[14px] mt-[2rem]">
           This link will expire in 5 days. If you did not make this request,

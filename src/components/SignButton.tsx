@@ -10,10 +10,7 @@ export default function SignButton({
   classes?: string;
 }) {
   return (
-    <button
-      onClick={onClick}
-      className={`bg-button-gradient text-white ${classes}`}
-    >
+    <button onClick={onClick} className={`text-white ${classes}`}>
       {text}
     </button>
   );

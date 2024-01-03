@@ -47,7 +47,7 @@ function About() {
       <SignButton
         onClick={() => nav("/wallet")}
         text="Continute"
-        classes="w-full h-[3.5rem] rounded"
+        classes="w-full h-[3.5rem] rounded bg-button-gradient"
       />
       <p className="text-[#949292] text-[14px] text-center">
         By clicking ‘Continue”, you agree to our <a>Terms</a> and confrim you’re

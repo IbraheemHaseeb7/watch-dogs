@@ -91,7 +91,7 @@ function SignIn() {
       <SignButton
         onClick={handleClick}
         text="Continue"
-        classes="w-full h-[3.5rem] rounded"
+        classes="w-full h-[3.5rem] rounded bg-button-gradient"
       />
       <p className="text-[#4E4C4C] text-[12px] w-full flex justify-center items-center">
         Don't have an account?{" "}

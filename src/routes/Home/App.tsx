@@ -2,7 +2,7 @@ import "./App.css";
 import Heading from "../../components/Heading";
 import Navbar from "../../components/Navbar";
 import SearchAndLogo from "../../components/SearchAndLogo";
-import Popup from "../../components/Popup";
+import SecondPopup from "../../components/SecondPopup";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         }}
         // user={null}
       />
-      <Popup img="first_popup.png" />
+      <SecondPopup />
       <div className="w-full flex justify-center items-center">
         <Heading
           leftText="watch"
