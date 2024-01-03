@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material";
-import withExtraProps from "../../components/SignHOC";
+import withExtraProps from "../../components/Sign/SignHOC";
 import React, { useState } from "react";
-import SignButton from "../../components/SignButton";
+import SignButton from "../../components/Sign/SignButton";
 import { useNavigate } from "react-router-dom";
 
 function About() {

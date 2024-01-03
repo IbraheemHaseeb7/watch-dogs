@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import withExtraProps from "../../components/SignHOC";
-import WalletButton from "../../components/WalletButton";
+import withExtraProps from "../../components/Sign/SignHOC";
+import WalletButton from "../../components/Sign/WalletButton";
 
 function Wallet() {
   const nav = useNavigate();

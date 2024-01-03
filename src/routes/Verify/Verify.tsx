@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import SignButton from "../../components/SignButton";
+import SignButton from "../../components/Sign/SignButton";
 
 export default function Verify() {
   const nav = useNavigate();

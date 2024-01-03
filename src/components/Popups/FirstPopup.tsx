@@ -1,5 +1,5 @@
 import withPopup from "./PopupHOC";
-import SignButton from "./SignButton";
+import SignButton from "../Sign/SignButton";
 
 function FirstPopup() {
   const points: { key: number; text: string }[] = [

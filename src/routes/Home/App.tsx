@@ -1,15 +1,14 @@
 import "./App.css";
-import Heading from "../../components/Heading";
-import Navbar from "../../components/Navbar";
-import SearchAndLogo from "../../components/SearchAndLogo";
-import SecondPopup from "../../components/SecondPopup";
+import Heading from "../../components/Home/Heading";
+import Navbar from "../../components/Gerneral/Navbar";
+import SearchAndLogo from "../../components/Home/SearchAndLogo";
+import SecondPopup from "../../components/Popups/SecondPopup";
 
 function App() {
   return (
     <main className="w-full h-screen mt-[10rem]">
       <Navbar
         user={{
-          username: "Romain Bernus",
           email: "romain.bernus@gmail.com",
           credits: 10,
           fname: "Romain",
@@ -17,7 +16,7 @@ function App() {
         }}
         // user={null}
       />
-      <SecondPopup />
+      {/* <SecondPopup /> */}
       <div className="w-full flex justify-center items-center">
         <Heading
           leftText="watch"

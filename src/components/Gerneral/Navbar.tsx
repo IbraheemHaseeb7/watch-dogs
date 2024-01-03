@@ -1,7 +1,7 @@
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import UserIcon from "./UserIcon";
-import HomeOptions from "./HomeOptions";
-import { User } from "../types/User";
+import HomeOptions from "../Home/HomeOptions";
+import { User } from "../../types/User";
 import React, { useState } from "react";
 import { IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -33,7 +33,7 @@ export default function Navbar({ user }: { user: User | null }) {
       </li>
       <div className="flex justify-center items-center gap-5 w-[20%] ml-[25%]">
         <div className="cursor-pointer text-white" onClick={handleOptions}>
-          <IconButton color="secondary">
+          <IconButton color="info">
             <MoreHorizIcon />
           </IconButton>
         </div>

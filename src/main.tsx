@@ -11,7 +11,9 @@ import Verify from "./routes/Verify/Verify.tsx";
 import About from "./routes/About/About.tsx";
 import Wallet from "./routes/Wallet/Wallet.tsx";
 import SignIn from "./routes/SignIn/SignIn.tsx";
+import DashBoard from "./routes/Dashboard/Dashboard.tsx";
 
+// routes for the react router
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,12 +40,19 @@ const router = createBrowserRouter([
     path: "/sign-in",
     element: <SignIn />,
   },
+  {
+    path: "/dashboard",
+    element: <DashBoard />,
+  },
 ]);
 
 const theme = createTheme({
   palette: {
     secondary: {
       main: "#AA48CD",
+    },
+    info: {
+      main: "#fff",
     },
   },
 });

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { User } from "../types/User";
+import { User } from "../../types/User";
 
 export default function HomeOptions({ user }: { user: User | null }) {
   const options: { title: string; link: string; secondText?: string }[] = [
@@ -21,7 +21,7 @@ export default function HomeOptions({ user }: { user: User | null }) {
           <p>You're currently Anonymous...</p>
         ) : (
           <>
-            <p className="p-0 m-0 h-[16px]">{user?.username}</p>
+            <p className="p-0 m-0 h-[16px]">{`${user?.fname} ${user?.lname}`}</p>
             <p className="p-0 m-0 text-[10px] h-[10px] text-[#837F7F]">
               {user?.email}
             </p>

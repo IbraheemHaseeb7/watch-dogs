@@ -1,10 +1,10 @@
 import { TextField } from "@mui/material";
-import withExtraProps from "../../components/SignHOC";
+import withExtraProps from "../../components/Sign/SignHOC";
 import React, { useEffect, useState } from "react";
-import SignButton from "../../components/SignButton";
+import SignButton from "../../components/Sign/SignButton";
 import { Link } from "react-router-dom";
-import FormLine from "../../components/FormLine";
-import SignHollowButtonWithIcon from "../../components/SignHollowButtonWithIcon";
+import FormLine from "../../components/Sign/FormLine";
+import SignHollowButtonWithIcon from "../../components/Sign/SignHollowButtonWithIcon";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
