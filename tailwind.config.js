@@ -20,7 +20,9 @@ export default {
       },
       gridTemplateColumns: {
         "nft-cols": "5% 47% repeat(4, 12%)",
+        "nft-md-cols": "2rem 20rem repeat(4, 5rem)",
         "nft-tran": "20% 10% 20% 20% 10% 10% 10%",
+        "nft-md-tran": "17rem 10rem 17rem 17rem 10rem 10rem 10rem 5rem",
       },
     },
   },

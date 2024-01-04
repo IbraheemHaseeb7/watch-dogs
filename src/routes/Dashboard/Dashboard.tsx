@@ -17,15 +17,15 @@ export default function DashBoard() {
           credits: 10,
         }}
       />
-      <h1 className="text-white pt-[8rem] text-[4.25rem] w-full flex justify-center items-center">
+      <h1 className="text-white pt-[8rem] text-[4.25rem] w-full flex justify-center items-center max-md:text-[3.5rem]">
         WatchDogs
       </h1>
       <Search buttonText="Generate" classes="translate-y-[-5rem]" />
-      <h1 className="text-white pt-[12rem] text-[2.25rem] w-full flex justify-start items-center pl-[5%]">
+      <h1 className="text-white pt-[12rem] text-[2.25rem] w-full flex justify-start items-center pl-[5%] max-md:text-[1.5rem]">
         Address:
-        <span className="text-[#B8B6B9] text-[1.5rem] translate-y-[3px] translate-x-[1rem]">{`0x123Hdedhei0001223332dju`}</span>
+        <span className="text-[#B8B6B9] text-[1.5rem] translate-y-[3px] translate-x-[1rem]  max-md:text-[0.75rem]">{`0x123Hdedhei0001223332dju`}</span>
       </h1>
-      <div className="mt-5 px-[4%] flex justify-center items-center gap-2">
+      <div className="mt-5 px-[4%] flex justify-center items-center gap-2 max-md:flex-col">
         <DoughnutContainer />
         <ActualProfitability />
       </div>

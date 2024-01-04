@@ -6,7 +6,7 @@ export default function NFTTransactionsRow({
   transaction: NFTTransactions;
 }) {
   return (
-    <div className="grid grid-cols-nft-tran justify-items-center border-b-[1px] border-[#898787] h-[4rem] items-center">
+    <div className="grid grid-cols-nft-tran justify-items-center border-b-[1px] border-[#898787] h-[4rem] items-center max-md:grid-cols-nft-md-tran justify-start">
       <p className="justify-self-start bg-text-gradient bg-clip-text text-transparent">
         {transaction.txnhash}
       </p>

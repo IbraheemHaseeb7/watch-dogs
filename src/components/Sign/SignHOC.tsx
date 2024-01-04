@@ -16,7 +16,7 @@ const withExtraProps = (WrappedComponent: ComponentType, title: string) => {
             className="fixed top-10 left-[50%] translate-x-[-50%]"
           />
         </Link>
-        <div className="flex justify-center items-center flex-col w-[50%]">
+        <div className="flex justify-center items-center flex-col w-[50%] max-md:w-[80%]">
           <h1 className="text-black font-extrabold text-[2rem]">
             {extraProps.title}
           </h1>

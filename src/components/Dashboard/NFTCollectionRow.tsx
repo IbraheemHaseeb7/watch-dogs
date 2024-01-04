@@ -9,7 +9,7 @@ export default function NFTCollectionRow({
   count: number;
 }) {
   return (
-    <div className="w-full grid grid-cols-nft-cols justify-center mb-2">
+    <div className="w-full grid grid-cols-nft-cols justify-start mb-2 max-md:grid-cols-nft-md-cols">
       <p className="flex justify-start items-center">{count}</p>
       <div className="flex justify-start items-center gap-5">
         <img src={data.img} />

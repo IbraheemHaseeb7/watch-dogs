@@ -6,10 +6,10 @@ export default function Verify() {
 
   return (
     <div className="bg-white w-full h-screen flex justify-center items-center text-black">
-      <div className="flex justify-center items-start flex-col w-1/3">
+      <div className="flex justify-center items-start flex-col w-1/3 max-md:w-[80%]">
         <div className="flex justify-start items-center w-full gap-2">
           <Link to="/">
-            <img src="navbar_logo.png" alt="logo" />
+            <img width="55px" height="61px" src="navbar_logo.png" alt="logo" />
           </Link>
           <h1 className="text-black text-[2rem] font-extrabold">WatchDogs</h1>
         </div>

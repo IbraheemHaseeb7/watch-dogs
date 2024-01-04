@@ -41,7 +41,7 @@ function DoughnutContainer() {
   };
   return (
     <div className="h-[35rem] flex justify-between flex-col">
-      <h1 className="self-start text-[4rem]">$ 100,000</h1>
+      <h1 className="self-start text-[4rem] max-md:text-[2.5rem]">$ 100,000</h1>
       <div className="h-[26rem] w-full flex justify-center items-center pb-5">
         <Doughnut data={data} style={{ color: "#fff" }} options={options} />
       </div>

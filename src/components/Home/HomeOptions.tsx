@@ -14,7 +14,7 @@ export default function HomeOptions({ user }: { user: User | null }) {
   ];
 
   return (
-    <div className="w-[14.125rem] h-[15.188rem] rounded-lg bg-white fixed top-[6rem] right-0 mr-[8rem] text-black">
+    <div className="w-[14.125rem] h-[15.188rem] rounded-lg bg-white fixed top-[6rem] right-0 mr-[8rem] text-black max-md:mr-5">
       {/* Username and email container */}
       <div className="w-full h-[2rem] flex justify-center items-start flex-col gap-2 px-2 py-[1.5rem]">
         {user === null ? (
