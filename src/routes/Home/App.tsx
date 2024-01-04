@@ -2,7 +2,6 @@ import "./App.css";
 import Heading from "../../components/Home/Heading";
 import Navbar from "../../components/Gerneral/Navbar";
 import SearchAndLogo from "../../components/Home/SearchAndLogo";
-import SecondPopup from "../../components/Popups/SecondPopup";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         }}
         // user={null}
       />
-      {/* <SecondPopup /> */}
       <div className="w-full flex justify-center items-center">
         <Heading
           leftText="watch"
@@ -25,7 +23,6 @@ function App() {
         />
       </div>
       <SearchAndLogo buttonText="Generate" imgLink="homepage_logo.png" />
-      {/* <div className="h-[100rem]"></div> */}
     </main>
   );
 }
