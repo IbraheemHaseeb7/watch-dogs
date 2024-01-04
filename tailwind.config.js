@@ -16,6 +16,11 @@ export default {
       },
       fontFamily: {
         chakra: ["Chakra Petch", "sans-serif"],
+        dmsans: ["DM Sans", "sans-serif"],
+      },
+      gridTemplateColumns: {
+        "nft-cols": "5% 47% repeat(4, 12%)",
+        "nft-tran": "20% 10% 20% 20% 10% 10% 10%",
       },
     },
   },

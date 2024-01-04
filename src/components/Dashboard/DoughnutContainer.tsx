@@ -33,17 +33,25 @@ function DoughnutContainer() {
     labels: ["ETH Balance", "NFT Balance", "Token Balance"],
     datasets: [
       {
-        data: [50, 20, 30],
+        data: [50000, 20000, 30000],
         backgroundColor: ["#A510FF", "#D946AA", "#F19C44"],
         borderWidth: 0,
       },
     ],
   };
   return (
-    <div className="h-[35rem]">
-      <Doughnut data={data} style={{ color: "#fff" }} options={options} />
+    <div className="h-[35rem] flex justify-between flex-col">
+      <h1 className="self-start text-[4rem]">$ 100,000</h1>
+      <div className="h-[26rem] w-full flex justify-center items-center pb-5">
+        <Doughnut data={data} style={{ color: "#fff" }} options={options} />
+      </div>
     </div>
   );
 }
 
-export default withDashboard(DoughnutContainer, "Total Balance", false);
+export default withDashboard(
+  DoughnutContainer,
+  "Total Balance",
+  undefined,
+  "h-[40rem]"
+);

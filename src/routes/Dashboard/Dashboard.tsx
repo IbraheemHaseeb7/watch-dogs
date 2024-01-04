@@ -1,11 +1,14 @@
 import ActualProfitability from "../../components/Dashboard/ActualProfitability";
+import DotplotContainer from "../../components/Dashboard/DotplotContainer";
 import DoughnutContainer from "../../components/Dashboard/DoughnutContainer";
+import NFTCollectionContainer from "../../components/Dashboard/NFTCollectionContainer";
+import NFTTransactions from "../../components/Dashboard/NFTTransactions";
 import Navbar from "../../components/Gerneral/Navbar";
 import Search from "../../components/Gerneral/Search";
 
 export default function DashBoard() {
   return (
-    <main className="bg-black w-full min-h-screen">
+    <main className="bg-black w-full min-h-screen pb-5">
       <Navbar
         user={{
           fname: "Romain",
@@ -25,6 +28,11 @@ export default function DashBoard() {
       <div className="mt-5 px-[4%] flex justify-center items-center gap-2">
         <DoughnutContainer />
         <ActualProfitability />
+      </div>
+      <div className="w-full mt-2 px-[4%] flex justify-center items-center gap-2 flex-col">
+        <NFTCollectionContainer />
+        <DotplotContainer />
+        <NFTTransactions />
       </div>
     </main>
   );

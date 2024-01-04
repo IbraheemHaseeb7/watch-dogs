@@ -45,11 +45,12 @@ export default function HomeOptions({ user }: { user: User | null }) {
         {options.map(({ title, link, secondText }) => {
           return (
             <Link
+              key={title}
               to={link}
               style={{ color: "#000", textDecoration: "none" }}
               className="p-2 flex justify-start text-left text-[14px] w-full items-center gap-1 h-[20%] hover:bg-[#cccccc]"
             >
-              <button key={title} className="" style={{ color: "#000" }}>
+              <button className="" style={{ color: "#000" }}>
                 {title}
                 {secondText && (
                   <span className="text-[10px]">{`(${secondText})`}</span>

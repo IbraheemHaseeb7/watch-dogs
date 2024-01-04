@@ -27,11 +27,11 @@ export default function Navbar({ user }: { user: User | null }) {
           />
         </Link>
       </div>
-      <li className="flex justify-center items-center text-white gap-7 w-[35%]">
+      <li className="flex justify-center items-center text-white gap-7 w-[35%] max-md:hidden">
         <a className="text-white cursor-pointer">Search</a>
         <a className="text-white cursor-pointer">What is WatchDogs?</a>
       </li>
-      <div className="flex justify-center items-center gap-5 w-[20%] ml-[25%]">
+      <div className="flex justify-center items-center gap-5 w-[20%] ml-[25%] max-md:ml-[50%]">
         <div className="cursor-pointer text-white" onClick={handleOptions}>
           <IconButton color="info">
             <MoreHorizIcon />
