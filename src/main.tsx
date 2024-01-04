@@ -12,6 +12,9 @@ import About from "./routes/About/About.tsx";
 import Wallet from "./routes/Wallet/Wallet.tsx";
 import SignIn from "./routes/SignIn/SignIn.tsx";
 import DashBoard from "./routes/Dashboard/Dashboard.tsx";
+import SignedIn from "./components/Gerneral/SignedIn.tsx";
+import { Provider } from "react-redux";
+import { store } from "./state/store.ts";
 
 // routes for the react router
 const router = createBrowserRouter([
@@ -46,6 +49,7 @@ const router = createBrowserRouter([
   },
 ]);
 
+// custom theme for MUI components
 const theme = createTheme({
   palette: {
     secondary: {
@@ -59,9 +63,12 @@ const theme = createTheme({
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Toaster />
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <SignedIn />
+        <Toaster />
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>
 );

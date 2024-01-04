@@ -95,7 +95,7 @@ function SignIn() {
       />
       <p className="text-[#4E4C4C] text-[12px] w-full flex justify-center items-center">
         Don't have an account?{" "}
-        <Link to={"/sign-in"}>
+        <Link to={"/sign-up"}>
           <span className="text-[#9C41BD]">Sign Up</span>
         </Link>
       </p>

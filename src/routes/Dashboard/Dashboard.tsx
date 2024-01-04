@@ -9,14 +9,7 @@ import Search from "../../components/Gerneral/Search";
 export default function DashBoard() {
   return (
     <main className="bg-black w-full min-h-screen pb-5">
-      <Navbar
-        user={{
-          fname: "Romain",
-          lname: "Bernus",
-          email: "romain.bernus@gmail.com",
-          credits: 10,
-        }}
-      />
+      <Navbar />
       <h1 className="text-white pt-[8rem] text-[4.25rem] w-full flex justify-center items-center max-md:text-[3.5rem]">
         WatchDogs
       </h1>

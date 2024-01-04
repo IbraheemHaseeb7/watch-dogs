@@ -6,7 +6,7 @@ export default function ErrorPage() {
 
   return (
     <div className="flex justify-center items-center flex-col w-full h-screen">
-      <Navbar user={null} />
+      <Navbar />
       <img src="navbar_logo.png" alt="logo.png" />
       <h1 className="mt-3">Oops, An error occurred</h1>
       <p>
